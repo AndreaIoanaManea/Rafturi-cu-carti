@@ -35,11 +35,9 @@ export function Products() {
           'https://www.googleapis.com/books/v1/volumes?q=comedie',
         ];
 
-        // Folosim Promise.all pentru a face cereri simultane către toate API-urile
         const responses = await Promise.all(urls.map(url => fetch(url)));
         const jsonResponses = await Promise.all(responses.map(response => response.json()));
 
-        // Combinăm rezultatele din toate răspunsurile într-un singur array de produse
         const combinedProducts = jsonResponses.flatMap(data => data.items || []);
 
         setProducts(combinedProducts);
@@ -161,8 +159,6 @@ export function Products() {
                     Adaugă la favorite
                  
                  </Button>
-
-
                 </Card.Body>
               </Card>
             </Col>
@@ -200,8 +196,6 @@ export function Products() {
                 </a>
               
             )}
-
-
 
             {selectedBook.accessInfo && selectedBook.accessInfo.webReaderLink && (
               
