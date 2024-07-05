@@ -15,16 +15,14 @@ h1 {
   font-size: 1.5rem;
 }
 
-/* styles.css */
 .sticky-header {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Asigurați-vă că header-ul este deasupra altor elemente */
-  background-color: white; /* Asigurați-vă că fundalul este opac */
+  z-index: 1000; 
+  background-color: white; 
   padding: 10px 0;
-  border-bottom: 1px solid #ccc; /* Opțional: Adăugați o linie de separare */
+  border-bottom: 1px solid #ccc; 
 }
-
 
 .custom-header {
   position: sticky;
@@ -71,7 +69,7 @@ h1 {
 }
 
 .custom-header .badge {
-  background-color: #9fb8d4; /* Culoare badge */
+  background-color: #9fb8d4; 
   color: #fff;
   font-size: 0.8rem;
   padding: 4px 8px;
@@ -79,10 +77,9 @@ h1 {
   margin-left: 5px;
 }
 
-/* SearchComponent.css */
 .search-component {
-  max-width: 600px; /* Lățimea maximă a barei de căutare */
-  margin: 20px auto; /* Centrarea pe pagină */
+  max-width: 600px; 
+  margin: 20px auto; 
   padding: 10px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -108,9 +105,6 @@ h1 {
   padding: 8px 16px;
   font-size: 16px;
 }
-
-
-
 
 .card-container {
   display: flex;
@@ -146,8 +140,8 @@ h1 {
 
 
 .modal-content {
-  background-color: #f8f9fa; /* Fundal modal */
-  color: #212529; /* Text principal */
+  background-color: #f8f9fa; 
+  color: #212529; 
 }
 
 .modal-body {
@@ -193,12 +187,12 @@ h1 {
 }
 
 .custom-modal-lg {
-  max-width: 150%; /* Lățime maximă */
-  margin: auto; /* Centrează modalul */
+  max-width: 150%; 
+  margin: auto; 
 }
 
 .custom-modal-title {
-  font-size: 20px; /* Mărime font titlu */
+  font-size: 20px; 
 }
 
 .modal-footer-button {
@@ -210,7 +204,7 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-height: 500px; /* Adjust the maximum height as needed */
+  max-height: 500px;
 }
 
 
@@ -265,8 +259,6 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Modal custom styling */
 .custom-modal-lg {
   max-width: 80%;
 }
@@ -293,8 +285,6 @@ h1 {
   cursor: pointer;
 }
 
-
-/* Stilizare bara de scroll pentru modal */
 .modal-body {
   max-height: calc(100vh - 200px); 
   overflow-y: auto; 
@@ -315,7 +305,6 @@ h1 {
 }
 
 
-/* Stil pentru modal pe ecrane mici */
 @media (max-width: 767px) {
   .modal-fullscreen {
     width: 100% !important;
@@ -325,7 +314,6 @@ h1 {
 }
 
 
-/* Stilizare bara de scroll pentru întreaga pagină */
 body {
   overflow-y: auto; 
 }
