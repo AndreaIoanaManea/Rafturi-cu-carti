@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../style.css'; // Fișierul CSS pentru stilizare personalizată
+import '../style.css'; 
 
 const SearchComponent = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = () => {
-    // Trimitem termenul de cautare în funcția parinte
     onSearch(searchTerm);
-    // Ștergem termenul de căutare din input după ce s-a trimis la parinte
     setSearchTerm('');
   };
 
   const handleKeyPress = (e) => {
-    // Verificăm dacă s-a apăsat tasta Enter
     if (e.key === 'Enter') {
       handleSearch();
     }
@@ -27,7 +24,7 @@ const SearchComponent = ({ onSearch }) => {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyPress={handleKeyPress} // Adăugăm handler pentru tasta Enter
+          onKeyPress={handleKeyPress} 
           placeholder="Introdu numele cărții"
           className="search-input modal-footer-button"
         />
